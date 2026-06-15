@@ -110,7 +110,7 @@ footer span{color:var(--v2);}
 <div class="page-header">
   <p class="ph-tag reveal">// BUT Sciences des Donnees — IUT de Niort</p>
   <h1 class="ph-h1 reveal">Mes <em>Projets SAE</em></h1>
-  <p class="ph-sub reveal">Pour chaque projet : les objectifs fixes, l'equipe, ce que j'ai concretement realise, les outils maitrise, et ce que j'en retiens vraiment. Cliquez sur les visuels pour les agrandir.</p>
+  <p class="ph-sub reveal">Chaque projet est une étape. Non pas vers un diplôme, mais vers une compréhension plus juste de ce que signifie travailler avec la donnée. Voici ce que j'ai fait — et ce que j'en retiens vraiment.</p>
   <div class="filter-row reveal">
     <button class="fb active" onclick="flt('all',this)">Tous</button>
     <button class="fb" onclick="flt('s1',this)">Semestre 1</button>
@@ -136,7 +136,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">Python 3</span><span class="tool">json</span><span class="tool">pandas</span><span class="tool">Spyder</span></div>
         <div class="bt mt">Extrait</div><div class="code"><span class="cm">import</span> json, pandas <span class="cm">as</span> pd<br>data = json.<span class="ck">load</span>(open(<span class="cs">'polluants.json'</span>))<br>df = pd.<span class="ck">json_normalize</span>(data)<br>df.<span class="ck">to_csv</span>(<span class="cs">'clean.csv'</span>, index=False)</div>
-        <div class="bt mt">Ressenti</div><div class="box-r">Ce projet m'a montre que la donnee brute est rarement directement exploitable. Comprendre sa structure avant de la transformer, c'est 70% du travail reel.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">Ce projet m'a révélé quelque chose d'essentiel : une donnée brute ressemble souvent à une phrase dans une langue que l'on ne comprend pas encore. Avant de la transformer, il faut l'écouter.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">J'aurais ajoute un rapport de qualite automatique en sortie — valeurs manquantes, doublons, types verifies. Rendre le pipeline auto-documente.</div>
       </div>
     </div>
@@ -157,7 +157,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">Sphinx</span><span class="tool">Excel</span><span class="tool">Word</span></div>
         
-        <div class="bt mt">Ressenti</div><div class="box-r">J'ai decouvert que formuler une bonne question est un vrai art intellectuel. L'analyse m'a revele des comportements contre-intuitifs que je n'aurais pas anticipes.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">J'ai compris ici que la qualité d'une analyse commence bien avant le premier graphique. Elle commence par la qualité de la question que l'on décide de poser.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">Un pre-test sur 5 personnes avant deploiement, et davantage de croisements de variables dans l'analyse finale.</div>
       </div>
     </div>
@@ -178,7 +178,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">Python</span><span class="tool">pandas</span><span class="tool">numpy</span><span class="tool">Spyder</span></div>
         <div class="bt mt">Extrait</div><div class="code">df.<span class="ck">dropna</span>(subset=[<span class="cs">'age'</span>], inplace=True)<br>df[<span class="cs">'tranche'</span>] = pd.<span class="ck">cut</span>(df[<span class="cs">'age'</span>],<br>  bins=[17,21,25,30], labels=[<span class="cs">'18-21'</span>,<span class="cs">'22-25'</span>,<span class="cs">'26-30'</span>])</div>
-        <div class="bt mt">Ressenti</div><div class="box-r">Ce projet m'a confirme que 80% du travail data c'est la preparation. Fastidieux mais fondamental.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">Il y a une forme de discipline silencieuse dans le nettoyage des données. Peu spectaculaire, mais fondatrice. Sans elle, tout ce qui suit est construit sur du sable.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">Un journal de traitement formel des le debut — pour justifier chaque decision et garantir la reproductibilite.</div>
       </div>
     </div>
@@ -199,7 +199,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">Excel</span><span class="tool">VBA</span><span class="tool">Python</span><span class="tool">Tkinter</span></div>
         
-        <div class="bt mt">Ressenti</div><div class="box-r">Ce projet m'a appris a penser en termes d'experience utilisateur. Le duo avec Antoine etait efficace et complementaire.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">Travailler avec Antoine m'a appris quelque chose que le code seul n'enseigne pas : concevoir pour quelqu'un d'autre, c'est d'abord comprendre comment il pense. Pas comment on pense soi-même.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">Je structurerais le code VBA en modules separes des le debut. Et j'ajouterais une validation des entrees plus robuste.</div>
       </div>
     </div>
@@ -222,7 +222,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">R</span><span class="tool">ggplot2</span><span class="tool">Canva</span><span class="tool">INSEE</span><span class="tool">data.gouv.fr</span></div>
         
-        <div class="bt mt">Ressenti</div><div class="box-r">Le paradoxe choisi — villages qui grandissent mais ferment leurs ecoles — etait une vraie decision editoriale forte. Le format concours, stimulant : la contrainte de temps force a l'essentiel.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">Ce concours m'a rappelé qu'une visualisation efficace n'est pas celle qui montre le plus — c'est celle qui dit quelque chose de juste en peu de mots. Le paradoxe des villages qui grandissent mais ferment leurs écoles, c'était exactement ce type de vérité contre-intuitive qui méritait d'être racontée.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">Moins d'informations, plus d'impact visuel. Une infographie percutante doit se lire en 10 secondes.</div>
       </div>
     </div>
@@ -243,7 +243,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">Power BI</span><span class="tool">DAX</span><span class="tool">Eurostat</span><span class="tool">Excel</span><span class="tool">PowerPoint</span></div>
         <div class="bt mt">Extrait</div><div class="code">Var_Population =<br>  <span class="ck">DIVIDE</span>(<br>    [Pop_2023] - [Pop_2014],<br>    [Pop_2014]<br>  ) * 100<br><span class="cm">// Roumanie: -4,5% | Suede: +9,1%</span></div>
-        <div class="bt mt">Ressenti</div><div class="box-r">Le projet le plus complet en termes de restitution. Dynamique d'equipe excellente — delais respectes avec avance.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">C'est le projet où j'ai réalisé qu'un dashboard ne se construit pas page par page — il se construit avec une vision d'ensemble dès la première heure. L'équipe a été à la hauteur de cette exigence.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">Un versionnement Power BI des le debut pour eviter les conflits de fichiers.</div>
       </div>
     </div>
@@ -264,7 +264,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">MySQL</span><span class="tool">Oracle SQL</span><span class="tool">SQL Developer</span><span class="tool">phpMyAdmin</span></div>
         <div class="bt mt">Extrait</div><div class="code"><span class="cm">CREATE VIEW</span> v_stats <span class="cm">AS</span><br><span class="ck">SELECT</span> v.type, <span class="ck">COUNT</span>(*) nb, <span class="ck">AVG</span>(l.dist) moy<br><span class="ck">FROM</span> Livraison l<br><span class="ck">JOIN</span> Vehicule v <span class="cm">ON</span> l.id_v=v.id<br><span class="ck">GROUP BY</span> v.type;</div>
-        <div class="bt mt">Ressenti</div><div class="box-r">La montee en complexite par rapport au S1 etait stimulante. Oracle m'a confronte a un environnement professionnel concret.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">La complexité ajoutée du semestre 2 n'était pas une difficulté de plus — c'était une invitation à penser différemment. Oracle m'a sorti de ma zone de confort, et c'est exactement là que l'on apprend vraiment.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">Tester sur des volumes importants des le debut — les problemes de performance n'apparaissent pas sur 50 lignes.</div>
       </div>
     </div>
@@ -285,7 +285,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">R</span><span class="tool">ggplot2</span><span class="tool">leaflet</span><span class="tool">sf</span><span class="tool">dplyr</span><span class="tool">Parcoursup</span><span class="tool">INSEE</span></div>
         
-        <div class="bt mt">Ressenti</div><div class="box-r">La carte interactive a ete la fierte de ce projet — voir des donnees de genre prendre vie geographiquement. J'ai appris a evaluer et croiser des sources officielles avec rigueur.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">La carte interactive a été le moment où j'ai compris ce que la visualisation peut faire de plus puissant : rendre visible ce que les tableaux cachent. Des données de genre, sur une carte, disent plus qu'une colonne de pourcentages.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">Une comparaison avec d'autres DOM-TOM ou la metropole pour contextualiser — une visualisation isolee a moins d'impact.</div>
       </div>
     </div>
@@ -306,7 +306,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">Python</span><span class="tool">SQLite</span><span class="tool">pandas</span><span class="tool">Streamlit</span><span class="tool">Scrum</span><span class="tool">Git</span></div>
         <div class="bt mt">Extrait</div><div class="code"><span class="cm">def</span> <span class="ck">ingest_pcr</span>(path, dept):<br>  df = pd.<span class="ck">read_csv</span>(path, sep=<span class="cs">';'</span>)<br>  conn = sqlite3.<span class="ck">connect</span>(<span class="cs">'qualyse.db'</span>)<br>  df.<span class="ck">to_sql</span>(<span class="cs">'pcr'</span>, conn, if_exists=<span class="cs">'append'</span>)<br>  <span class="cm">return</span> <span class="ck">len</span>(df)</div>
-        <div class="bt mt">Ressenti</div><div class="box-r">Le projet le plus proche d'une situation professionnelle reelle. 3 858 lignes, 87% de conformite, 34 anomalies detectees — des chiffres qui parlent.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">Pour la première fois, j'ai travaillé avec un commanditaire réel qui attendait des résultats réels. 3 858 lignes ingérées, 87% de conformité. Ces chiffres ne valident pas un exercice — ils répondent à un besoin. C'est une différence qui change tout.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d ">Separer les roles Scrum Master et developpeur des le debut. Documenter l'API interne des le premier sprint.</div>
       </div>
     </div>
@@ -329,7 +329,7 @@ footer span{color:var(--v2);}
       <div>
         <div class="bt">Outils utilises</div><div class="tools"><span class="tool">Python</span><span class="tool">Whisper</span><span class="tool">Anthropic SDK</span><span class="tool">pyttsx3</span><span class="tool">sounddevice</span><span class="tool">Anaconda</span></div>
         <div class="bt mt">Extrait</div><div class="code"><span class="cm">import</span> whisper, anthropic<br>model = whisper.<span class="ck">load_model</span>(<span class="cs">"base"</span>)<br>client = anthropic.<span class="ck">Anthropic</span>()<br><span class="cm">def</span> <span class="ck">respond</span>(audio):<br>  text = model.<span class="ck">transcribe</span>(audio)[<span class="cs">"text"</span>]<br>  <span class="cm">return</span> client.messages.<span class="ck">create</span>(...)</div>
-        <div class="bt mt">Ressenti</div><div class="box-r">Le projet qui me passionne le plus — entierement guide par ma curiosite. C'est lui qui m'a confirme que l'IA est ma voie.</div>
+        <div class="bt mt">Ressenti</div><div class="box-r">Ce projet est le plus personnel que j'aie jamais mené. Personne ne me l'a demandé, personne ne l'évalue. Je le construis parce que l'idée m'habite — et c'est précisément pour ça qu'il me pousse le plus loin.</div>
         <div class="bt mt">Ce que je referais differemment</div><div class="box-d green">Google Calendar, wake-word, memoire contextuelle persistante, deploiement Raspberry Pi.</div>
       </div>
     </div>
